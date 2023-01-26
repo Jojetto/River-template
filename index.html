@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4f5b7c629e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+            <title> Dr Developer </title>
+        <body>
+            <!-- Navigation Bar -->
+            <header class="header">
+            <h1 class="logo"> <img src="LOGO.png" width="100px" height="100px"><i> Unlock River </i> </h1>
+            <nav class="navigation">
+            <ul>
+            <li> 
+                <button class="toggle" onclick="eclipse" id="toggle">
+                    <span class="material-symbols-outlined active1">
+                        light_mode
+                        </span>
+    
+                        <span class="material-symbols-outlined active2" id="eclipse-toggle">
+                            dark_mode
+                            </span>
+                </button>
+            </li>
+            <li><a href="#" class="active"> Home </a></li>
+            <li><a href="#"> How it works </a></li>
+            <li><a href="#about"> Testimonials </a></li>
+            <li><a href="#faq"> FAQ </a></li>
+            <li><a href="#help"> Help </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            </ul>
+            </nav>
+            </header>
+
+            <!--main part-->
+        <section class="main">
+            <img src="stars1.webp" alt="stars1" id="stars1">
+            <img src="moon2.webp" alt="moon2" id="moon2">
+            <div class="display"><img src="moon.jpg" id="black" class="ecl inecl" style="width:550px"></div>
+        </section>
+        <div class="Contact" id="contact">
+            <div class="Title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis voluptatem doloribus similique cupiditate.</p>
+            </div>
+            <div class="contactForm">
+                <h2 class="titleText"><span class="logo">U</span>nlock your phone now</h2>
+                <div class="inputBox">
+                    <input type="text" placeholder="Carrier">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Manufacturer">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Model">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="IMEI (15 digits)">
+                </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Email">
+                    </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Mobile Phone number (Optional)">
+                </div>
+                
+                <div class="inputBox">
+                    <textarea placeholder="Name"></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+        <footer>
+        <div class="copyrightText"><p> Copyright2022@</p><a href="#"> Unlock River</a> All Rights Reserved </div>
+        </footer>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                let stars1= document.getElementById('stars1');
+                let moon2= document.getElementById('moon2');
+                const toggle=document.getElementById('toggle');
+                const body=document.querySelector('body');
+                const dark=document.getElementById('eclipse-toggle');
+
+                window.onscroll= function(){
+                    let value= scrollY;
+                    stars1.style.left= value + 'px';
+                }
+                toggle.onclick = function(){
+                    document.body.classList.toggle("eclipse");
+                }
+
+
+        </script>
+        </div>
+        </body>    
+    </head>
+</html>

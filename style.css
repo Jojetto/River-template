@@ -1,0 +1,200 @@
+.eclipse
+{
+    background: #000;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#8BD8BD,#243665);
+    height:max-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header .logo img
+{
+    mix-blend-mode: screen;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+header .toggle
+{
+    background-color: #fff;
+    border-radius: 24px;
+    max-height: 1.7rem;
+    cursor: pointer;
+    width: 4rem;
+    display: flex;
+}
+header .toggle .active1
+{
+    border-radius: 24px;
+    background-color: gold;
+    color: #fff;
+}
+.eclipse header .toggle
+{
+    border-radius: 24px;
+    background-color: gold;
+    color: #fff;
+}
+.eclipse header .toggle .active1{
+    background-color: #fff;
+    border-radius: 24px;
+    color: #000;
+}
+.header .toggle span{
+    width: 50%;
+    font-size: 1.4rem;
+    height: 100%;
+}
+.toggle #eclipse .active1{
+    background-color: #fff;
+}
+.toggle #eclipse .active2
+{
+
+    border-radius: 24px;
+    background-color: goldenrod;
+    color: #fff;
+}
+header .logo{
+    color:goldenrod;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 20px;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover, .active{
+    background: gold;
+    color:#fff;
+}
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+}
+.main img{
+    position: absolute;
+    width: 100%;
+}
+#moon2{
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+}
+.eclipse #moon2{
+    display: none;
+}
+.display{
+    display: flex;
+}
+#black{
+    display: none;
+    top: 30px;
+    left: 400px;
+
+}
+.eclipse #black
+{
+    display: block;
+}
+.ecl{
+    display: block;
+    z-index: 99999;
+}
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.7) ;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-top: 35px;
+}
+.contactForm .titleText{
+    padding-bottom: 20px;
+}
+.contactForm h2 span{
+    color: rgb(255, 215, 0);
+    font-size: 2.2em;
+}
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.contactForm .inputBox {
+position: relative;
+width: 100%;
+margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    color: #000;
+    display:inline-block ;
+    text-decoration: none;
+    max-width: 100px;
+    transition: 0.5%;
+    border: 1px solid rgb(255, 215, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.9s ease;
+}
+.contactForm .inputBox input[type="submit"]:hover
+{
+    background: rgb(255, 215, 0);
+    transform: scale(1.1);
+}
+footer {
+    margin-top: 45px ;
+}
+.copyrightText 
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.copyrightText a{
+    color: goldenrod;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: none;
+}
